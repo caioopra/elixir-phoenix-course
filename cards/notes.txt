@@ -1,0 +1,18 @@
+Interactive elixir: ies -S mix
+
+Accessing data through "patter matching":
+-> "function" returns a tuple ([...], [...])
+    { variable1, variable2 } = function(...)
+-> these variables will have the returned value (in order of the return)
+
+-> [color1, color2] = ["red", "green"]   // color1 = "red", color2 = "green"
+-> [color1, color2, color3] = ["red", "green"]   // ERROR (no match of right hand)
+
+
+Installing dependencies:
+-> add the dep to mix.exs
+-> cli: mix deps.get
+
+
+Using :ex_doc:
+-> $ mix docs
