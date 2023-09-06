@@ -16,3 +16,34 @@ Installing dependencies:
 
 Using :ex_doc:
 -> $ mix docs
+
+
+Writing tests using doctesting:
+@doc """
+    ...
+
+## Examples
+
+    iex> ...
+    iex> ...
+    ...
+
+"""
+def ...
+
+Running tests: mix test
+
+-------
+Maps
+-> "dictionary/object(JS)"
+
+colors = %{primary: "red"}
+colors.primary => red
+colors = %{primary:"red", secondary: "blue"}
+
+%{secondary: secondary_color_variable} = colors
+    -> verifies if colors is a map
+    -> verify if there is a "secondary" key
+    -> if all yes, assign secondary_color_variable to the value of colors.secondary
+    => patter matching
+
